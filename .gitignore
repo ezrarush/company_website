@@ -95,3 +95,11 @@ capybara-*html
 # vendor/extensions dummy applications.
 vendor/extensions/**/spec/dummy
 
+# Environment files that may contain sensitive data
+.env
+.powenv
+Procfile
+
+# emacs
+*~
+\#*\#
