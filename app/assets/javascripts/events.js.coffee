@@ -1,4 +1,4 @@
-$(document).on 'ready page:load', ->
-  $("#calendar").fullCalendar(
+$(document).on 'page:load ready', ->
+  $("#calendar").once('calendar').fullCalendar(
     events: '/events.json'
-  )
+  );
