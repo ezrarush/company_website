@@ -14,10 +14,15 @@
  *= require refinery/formatting
  *= require refinery/theme
  *= require_self
+ *= require fullcalendar
  */
 
+#calendar {
+  width: 50%;
+}
+
 body {
-  background: #DDD;
+  background: #EEE;
   font-family: Verdana;
   font-size: 13px;
   line-height: 18px;
@@ -26,7 +31,7 @@ body {
 #body, #side_body {
   float: left;
   width: 45%;
-  background: #DDD;
+  background: #EEE;
   color: #333;
   padding: 20px;
 }

@@ -145,6 +145,7 @@ GEM
     filters_spam (0.5)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
+    fullcalendar-rails (2.0.2.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     globalize (5.0.1)
@@ -272,6 +273,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  fullcalendar-rails
   jbuilder (~> 2.0)
   jquery-rails
   pg
