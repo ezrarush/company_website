@@ -1,0 +1,16 @@
+<% content_for :body do %>
+  <ul id="events">
+    <% @events.each do |event| %>
+      <li>
+	<% if event.all_day %>
+	  <%= event.start_time.strftime("%B %-d, %Y, %a") %>
+	<% else %>
+	  <%= event.start_time.strftime("%B %-d, %Y, %a %l:%M %P") %>
+        <% end %>
+	<%= link_to event.title, refinery.events_event_path(event) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

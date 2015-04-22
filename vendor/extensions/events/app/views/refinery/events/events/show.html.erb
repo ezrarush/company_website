@@ -1,0 +1,68 @@
+<% content_for :body_content_title do %>
+  <%= @event.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @event.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Start Time</h1>
+    <p>
+      <%=raw @event.start_time %>
+    </p>
+  </section>
+  <section>
+    <h1>End Time</h1>
+    <p>
+      <%=raw @event.end_time %>
+    </p>
+  </section>
+  <section>
+    <h1>All Day</h1>
+    <p>
+      <%=raw @event.all_day %>
+    </p>
+  </section>
+  <section>
+    <h1>Type</h1>
+    <p>
+      <%=raw @event.type %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @event.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Blurb</h1>
+    <p>
+      <%=raw @event.blurb %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="events">
+      <% @events.each do |event| %>
+        <li>
+	  <% if event.all_day %>
+	    <%= event.start_time.strftime("%B %-d, %Y, %a") %>
+	  <% else %>
+	    <%= event.start_time.strftime("%B %-d, %Y, %a %l:%M %P") %>
+          <% end %>
+          <%= link_to event.title, refinery.events_event_path(event) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150421001538) do
+ActiveRecord::Schema.define(version: 20150422032420) do
 
   create_table "refinery_blog_categories", force: :cascade do |t|
     t.string   "title"
@@ -90,6 +90,19 @@ ActiveRecord::Schema.define(version: 20150421001538) do
   add_index "refinery_blog_posts", ["access_count"], name: "index_refinery_blog_posts_on_access_count"
   add_index "refinery_blog_posts", ["id"], name: "index_refinery_blog_posts_on_id"
   add_index "refinery_blog_posts", ["slug"], name: "index_refinery_blog_posts_on_slug"
+
+  create_table "refinery_events", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.boolean  "all_day"
+    t.integer  "type"
+    t.integer  "photo_id"
+    t.text     "blurb"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "refinery_images", force: :cascade do |t|
     t.string   "image_mime_type"
