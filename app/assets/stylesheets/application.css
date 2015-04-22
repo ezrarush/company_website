@@ -17,10 +17,6 @@
  *= require fullcalendar
  */
 
-#calendar {
-  width: 50%;
-}
-
 body {
   background: #EEE;
   font-family: Verdana;
