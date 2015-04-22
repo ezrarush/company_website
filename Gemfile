@@ -66,4 +66,5 @@ gem 'refinerycms-blog', git: 'https://github.com/refinery/refinerycms-blog', bra
 
 gem 'refinerycms-events', path: 'vendor/extensions'
 
-gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+gem 'fullcalendar-rails', :github => "ezrarush/fullcalendar-rails", :branch => "master"

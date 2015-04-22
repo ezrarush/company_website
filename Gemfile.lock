@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/ezrarush/fullcalendar-rails.git
+  revision: da119ba9ded817c20c47859592d3f9215499562e
+  branch: master
+  specs:
+    fullcalendar-rails (2.3.1.0)
+      jquery-rails (>= 3.1.1, < 5.0.0)
+      momentjs-rails (~> 2.8, >= 2.8.4)
+
+GIT
   remote: https://github.com/refinery/refinerycms
   revision: 39a4306f3ebb4760f639880a53ed37eefa7e43aa
   branch: master
@@ -145,7 +154,6 @@ GEM
     filters_spam (0.5)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
-    fullcalendar-rails (2.0.2.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     globalize (5.0.1)
@@ -169,6 +177,8 @@ GEM
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (5.6.0)
+    momentjs-rails (2.9.0)
+      railties (>= 3.1)
     multi_json (1.11.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -273,9 +283,10 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
-  fullcalendar-rails
+  fullcalendar-rails!
   jbuilder (~> 2.0)
   jquery-rails
+  momentjs-rails
   pg
   quiet_assets
   rails (= 4.2.1)
