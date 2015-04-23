@@ -4,6 +4,10 @@
 
 <% content_for :body do %>
   <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @event.title %>
+    </p>
     <h1>Date</h1>
     <p>
       <%=raw @event.start_time.strftime("%B %-d, %Y, %a") %>

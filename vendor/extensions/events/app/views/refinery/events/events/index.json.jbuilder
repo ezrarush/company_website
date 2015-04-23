@@ -16,8 +16,8 @@ json.array!(@events) do |event|
     json.borderColor "#009933"
   end 
   if event.event_type == 4 
-    json.backgroundColor "#FFFF00"
-    json.borderColor "#FFCC00"
+    json.backgroundColor "#FFCC00"
+    json.borderColor "#FFFF00" 
   end 
   if event.event_type == 5 
     json.backgroundColor "#FF9900"

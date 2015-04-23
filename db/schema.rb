@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150422235835) do
+ActiveRecord::Schema.define(version: 20150423014750) do
 
   create_table "refinery_blog_categories", force: :cascade do |t|
     t.string   "title"
@@ -96,7 +96,7 @@ ActiveRecord::Schema.define(version: 20150422235835) do
     t.datetime "start_time"
     t.datetime "end_time"
     t.boolean  "all_day"
-    t.integer  "event_type", default: 0
+    t.integer  "event_type", default: 1
     t.integer  "photo_id"
     t.text     "blurb"
     t.integer  "position"
