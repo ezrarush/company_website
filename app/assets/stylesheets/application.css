@@ -48,3 +48,7 @@ body {
     }
   }
 }
+
+.fc-time {
+    display:none;
+}

@@ -4,43 +4,27 @@
 
 <% content_for :body do %>
   <section>
-    <h1>Title</h1>
+    <h1>Date</h1>
     <p>
-      <%=raw @event.title %>
+      <%=raw @event.start_time.strftime("%B %-d, %Y, %a") %>
     </p>
+    <% unless @event.all_day %>
+      <h1>Start Time</h1>
+      <p>
+        <%=raw @event.start_time.strftime("%l:%M %P") %>
+      </p>
+      <h1>End Time</h1>
+      <p>
+        <%=raw @event.end_time.strftime("%l:%M %P") %>
+      </p>
+    <% end %>
   </section>
   <section>
-    <h1>Start Time</h1>
-    <p>
-      <%=raw @event.start_time %>
-    </p>
-  </section>
-  <section>
-    <h1>End Time</h1>
-    <p>
-      <%=raw @event.end_time %>
-    </p>
-  </section>
-  <section>
-    <h1>All Day</h1>
-    <p>
-      <%=raw @event.all_day %>
-    </p>
-  </section>
-  <section>
-    <h1>Type</h1>
-    <p>
-      <%=raw @event.type %>
-    </p>
-  </section>
-  <section>
-    <h1>Photo</h1>
     <p>
       <%= image_fu @event.photo, nil %>
     </p>
   </section>
   <section>
-    <h1>Blurb</h1>
     <p>
       <%=raw @event.blurb %>
     </p>
