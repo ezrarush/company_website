@@ -44,6 +44,10 @@ group :development, :test do
   gem 'spring'
 end
 
+# For Heroku
+group :production do
+  gem 'rails_12factor'
+end
 
 gem 'refinerycms', git: 'https://github.com/refinery/refinerycms', branch: 'master'
 
