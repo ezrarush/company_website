@@ -61,3 +61,5 @@ gem 'refinerycms-events', path: 'vendor/extensions'
 
 gem 'momentjs-rails'
 gem 'fullcalendar-rails', :github => "ezrarush/fullcalendar-rails", :branch => "master"
+
+gem 'bootstrap-sass', '~> 3.3.4'  
