@@ -13,13 +13,18 @@
   </ul>
 <% end %>
 
-<section id='body'>
-  <div id="calendar"></div>
-</section>
-
-<%= render '/refinery/content_page' %>
-
-
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <br>
+      <div id="calendar"></div>
+    </div>
+    <div class="col-md-6">
+      <section id='body'>
+	<%= render '/refinery/content_page' %>
+      </section>
+    </div>
+  </div>
+</div>
 
 
