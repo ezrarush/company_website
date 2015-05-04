@@ -39,6 +39,9 @@ public/javascripts/cache
 public/stylesheets/cache
 public/refinery/*
 
+# i dunno
+/public/assets
+
 # Vendor Cache
 vendor/cache
 
