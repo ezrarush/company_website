@@ -40,7 +40,7 @@ public/stylesheets/cache
 public/refinery/*
 
 # i dunno
-/public/assets
+# /public/assets
 
 # Vendor Cache
 vendor/cache
