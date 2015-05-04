@@ -1,6 +1,33 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.jumbotron:nth-of-type(1) {
+  background: #28B268;
+  color: white;
+}
+
+.jumbotron:nth-of-type(2) {
+  background: #783A78;
+  color: white;
+}
+
+.jumbotron:nth-of-type(3) {
+  background: #3081C1;
+  color: white;
+}
+
+.jumbotron:nth-of-type(4) {
+  background: #EF5BA1;
+  color: white;
+}
+
+.jumbotron:nth-of-type(5) {
+  background: #B11C54;
+  color: white;
+}
+
+
+
 // bootstrap 4 might have vertical spacing
 .voffset  { margin-top: 2px; }
 .voffset1 { margin-top: 5px; }
