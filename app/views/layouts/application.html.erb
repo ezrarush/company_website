@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <%= render "/refinery/html_tag" %>
-  <% site_bar = render('/refinery/site_bar', :head => true) -%>
-  <head>
-    <%= render "/refinery/head" %>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= render "/refinery/javascripts" %>
-  </head>
-  <body id="<%= canonical_id @page %>">
-    <div class="container">
+<% site_bar = render('/refinery/site_bar', :head => true) -%>
+<head>
+  <%= render "/refinery/head" %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= render "/refinery/javascripts" %>
+</head>
+<body id="<%= canonical_id @page %>">
+
     <%= site_bar -%>
     <div id="page_container">
       <header id="header">
@@ -21,6 +21,5 @@
       </footer>
     </div>
 
-    </div>
-  </body>
+</body>
 </html>
