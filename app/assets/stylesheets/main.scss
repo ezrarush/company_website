@@ -1,19 +1,42 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.row .jumbotron:nth-of-type(1) {
-  background: #28B268;
-  color: white;
+// no rounded corners
+* {
+  border-radius: 0 !important;
 }
 
-.row .jumbotron:nth-of-type(2) {
-  background: #783A78;
-  color: white;
-}
+//make things big links by putting an <a><span></span></a> in them
 
-.row .jumbotron:nth-of-type(3) {
-  background: #3081C1;
-  color: white;
+div.jumbotron > a > span { 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
+  
+}  
+
+.jumbotron {
+  position:relative;
+  padding: 15px 15px;
+  
+  }
+  
+.container .jumbotron {
+  padding-left: 30px;
+  
+  }
+
+div.jumbotron > a > span:hover {
+  background-color: rgba(200,200,200,0.6)
+
+}   
+
+.row .jumbotron {
+  height: 350px;
 }
 
 .jumbotron:nth-of-type(1) {
@@ -41,6 +64,20 @@
   color: white;
 }
 
+.row div:nth-of-type(1) .jumbotron {
+  background: #28B268;
+  color: white;
+}
+
+.row div:nth-of-type(2) .jumbotron {
+  background: #783A78;
+  color: white;
+}
+
+.row div:nth-of-type(3) .jumbotron {
+  background: #3081C1;
+  color: white;
+}
 
 
 // bootstrap 4 might have vertical spacing

@@ -6,9 +6,9 @@
 <%= csrf_meta_tags if Refinery::Core.authenticity_token_on_frontend -%>
 <%= yield :meta %>
 
-<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+<%= stylesheet_link_tag "application", media: 'all', 'data-turbolinks-track' => true %>
 <%= yield :stylesheets %>
 
 <%= render '/refinery/google_analytics' %>
 
-<%= javascript_include_tag 'modernizr-min' %>
+<%= javascript_include_tag 'modernizr-min', media: 'all', 'data-turbolinks-track' => true %>
