@@ -1,6 +1,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// bootstrap 4 might have vertical spacing
+.voffset  { margin-top: 2px; }
+.voffset1 { margin-top: 5px; }
+.voffset2 { margin-top: 10px; }
+.voffset3 { margin-top: 15px; }
+.voffset4 { margin-top: 30px; }
+.voffset5 { margin-top: 40px; }
+.voffset6 { margin-top: 60px; }
+.voffset7 { margin-top: 80px; }
+.voffset8 { margin-top: 100px; }
+.voffset9 { margin-top: 150px; }
+
+
 // to get bootstrap icons to show
 @font-face {
     font-family: 'Glyphicons Halflings';
@@ -88,7 +101,7 @@ font-size: 12px;
     color: #ffffff;
 }
 
-.carousel-inner h1, h2, h3, h4, h5 {
+.carousel-inner h1, .carousel-inner h2, .carousel-inner h3, .carousel-inner h4, .carousel-inner h5 {
    text-transform: uppercase;	
    color: #ffffff;
    font-weight: 900;
