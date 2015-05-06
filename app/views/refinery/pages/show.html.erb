@@ -1,8 +1,14 @@
 <div class="container voffset3">
-<section id='body'>
-  <%=raw @page.content_for(:body) %>
-</section>
-<section id='side_body'>
-  <%=raw @page.content_for(:side_body) %>
-</section>
-</div>
+  <div class="row">
+    <div class="col-sm-8">
+      <section id='body'>
+	<%=raw @page.content_for(:body) %>
+      </section>
+    </div>
+    <div class="col-sm-4">
+      <section id='side_body'>
+	<%=raw @page.content_for(:side_body) %>
+      </section>
+    </div>
+  </div>
+</div>      

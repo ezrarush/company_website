@@ -54,5 +54,17 @@
 <% end %>
 
 <div class="container">
-  <%= render '/refinery/content_page' %>
+<div class="row">
+  <div class="col-sm-8">
+    <section id='body'>
+      <%=raw content_for(:body) %>
+    </section>
+  </div>
+  <div class="col-sm-4">
+    <section id='side_body'>
+      <%=raw content_for(:side_body) %>
+    </section>
+  </div>
 </div>
+</div>      
+

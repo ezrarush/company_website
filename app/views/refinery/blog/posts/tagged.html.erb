@@ -3,6 +3,7 @@
 <% content_for :body_content_title, "#{t('.posts_tagged')} &#8220;#{h(@tag_name.titleize)}&#8221;".html_safe -%>
 
 <% content_for :body do %>
+  <h1><%= "#{t('.posts_tagged')} “#{h(@tag_name.titleize)}”".html_safe %></h1>
   <% if @posts.any? %>
     <section id="blog_posts">
       <%= render :partial => "/refinery/blog/shared/post", :collection => @posts %>
@@ -15,5 +16,18 @@
 
 <%= render '/refinery/blog/shared/body_content_right' %>
 
-<%= render "/refinery/content_page" %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10">
+      <section id='body'>
+	<%=raw content_for(:body) %>
+      </section>
+    </div>
+    <div class="col-sm-2">
+      <section id='side_body'>
+	<%=raw content_for(:side_body) %>
+      </section>
+    </div>
+  </div>
+</div>     
 <% content_for :stylesheets, stylesheet_link_tag('refinery/blog/frontend') %>
