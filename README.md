@@ -18,9 +18,7 @@ Pictures and other files can be uploaded for a rich multimedia experience. On de
 
 ## Event Calendar Powered by a JSON Back-end
 
-A customizable full-sized event calendar that uses AJAX. A json back-end feeds the calendar or any app that needs event info. Check out the event back-end for yourself using the url:
-
-https://new-name-network.herokuapp.com/events.json
+A customizable full-sized event calendar that uses AJAX. A json back-end feeds the calendar or any app that needs event info.
 
 ## Refinery CMS
 

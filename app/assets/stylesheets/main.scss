@@ -2,10 +2,8 @@
 @import "bootstrap";
 
 body {
- //  margin-top: 50px; // accommodate the navbar
   font-family: "Open Sans","Microsoft YaHei","Hiragino Sans GB","Hiragino Sans GB W3","Helvetica Neue",Arial,sans-serif;
-
-  }
+}
 
 // no rounded corners
 * {
@@ -83,7 +81,6 @@ div.jumbotron > a > span:hover {
   background: #3081C1;
   color: white;
 }
-
 
 // bootstrap 4 might have vertical spacing
 .voffset  { margin-top: 2px; }
